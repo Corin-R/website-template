@@ -10,3 +10,4 @@ if os.path.exists(".env"):
 class Settings:   
     LOG_LEVEL = int(os.getenv("LOG_LEVEL", 20))
     APP_VERSION = os.getenv("APP_VERSION", "0.0.0")
+    DEBUG_MODE = os.getenv("DEBUG", "False") == "True"
