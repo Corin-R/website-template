@@ -65,7 +65,6 @@ def main():
             host="0.0.0.0",
             port=8000,
             reload=Settings.DEBUG_MODE,
-            workers=8
         )
     except KeyboardInterrupt:
         logger.info("Received Ctrl+C")
