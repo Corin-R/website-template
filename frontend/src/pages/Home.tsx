@@ -16,41 +16,13 @@ import { ThemeSwitch } from "@/components/ThemeSwitch";
 import {NavLink} from "react-router";
 import { useEffect, useMemo, useState } from "react";
 import { HealthStatus } from "../components/HealthStatus";
+import AppBar from "@/components/Header";
 
 export default function HomePage() {
 
     return (
     <div className="flex h-screen min-h-0 flex-col text-foreground">
-      <nav className="w-full shrink-0 border-b border-divider bg-surface px-8 py-3">
-        <div className="flex w-full items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="grid w-6 place-items-center">
-              <a
-                href="https://www.example.com"
-                rel="noreferrer"
-                target="_blank"
-              >
-                <img alt="Logo" src="logo.png" />
-              </a>
-            </div>
-
-            <div className="leading-tight">
-              <div className="text-sm font-semibold">Template</div>
-              <div className="text-xs text-gray-500">
-                by Corin
-              </div>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-4">
-            <Link href="/test">
-              Test Page
-              <Link.Icon />
-            </Link>
-            <ThemeSwitch/>
-          </div>
-        </div>
-      </nav>
+      <AppBar/>
 
       <main className="w-full flex-1 overflow-auto px-6 py-6">
         <div className="mx-auto flex max-w-7xl flex-col gap-6">
@@ -323,8 +295,7 @@ export default function HomePage() {
       <footer className="w-full shrink-0 border-t border-divider bg-surface px-8 py-2 text-xs text-foreground-500">
         <div className="flex justify-between">
           <span className="text-orange-600">
-            Research prototype - for internal testing purposes only! No
-            guarantees!
+            Private Project! No guarantees!
           </span>
           <span>Version: x.x.x</span>
         </div>
