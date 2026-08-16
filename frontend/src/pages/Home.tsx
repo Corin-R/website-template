@@ -3,8 +3,6 @@ import {
     Chip,
     Link,
     buttonVariants,
-    Tooltip,
-    TooltipTrigger,
     Button,
     Separator,
     Label,
@@ -12,9 +10,6 @@ import {
     ProgressBar,
     Tabs,
 } from "@heroui/react";
-import { ThemeSwitch } from "@/components/ThemeSwitch";
-import {NavLink} from "react-router";
-import { useEffect, useMemo, useState } from "react";
 import { HealthStatus } from "../components/HealthStatus";
 import AppBar from "@/components/Header";
 
@@ -30,7 +25,7 @@ export default function HomePage() {
             <Card variant="tertiary">
               <Card.Header className="flex flex-col items-start gap-3">
                 <Chip color="accent" variant="soft">
-                  Internal Prototype
+                  Prototype
                 </Chip>
 
                 <div>

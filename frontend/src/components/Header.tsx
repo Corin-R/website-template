@@ -1,4 +1,3 @@
-import { Link } from "@heroui/react";
 import { ThemeSwitch } from "./ThemeSwitch";
 
 
@@ -19,7 +18,7 @@ export default function AppBar() {
                     </div>
 
                     <div className="leading-tight">
-                        <div className="text-sm font-semibold">Map of schools in BW</div>
+                        <div className="text-sm font-semibold">Website Template</div>
                         <div className="text-xs text-gray-500">
                             by Corin
                         </div>
